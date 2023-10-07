@@ -20,7 +20,7 @@
   <GraphMatchNumSections>0</GraphMatchNumSections>
   <Stationery>0</Stationery>
   <CreationDateTime>2023-10-07 15:58:05</CreationDateTime>
-  <ModifiedDateTime>2023-10-07 16:31:59</ModifiedDateTime>
+  <ModifiedDateTime>2023-10-07 16:42:56</ModifiedDateTime>
   <PageBounds>0 0 13.3055555556 6.06944444444</PageBounds>
   <ScreenResolution>0 0 1919 1079</ScreenResolution>
   <MathType>0</MathType>
@@ -41,22 +41,22 @@
     <BroadcastTo>0 </BroadcastTo>
     <Visible>1</Visible>
     <PageTitle></PageTitle>
-    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0x1d</PageColor>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0xffffffff</PageColor>
     <PageDisplayPageInfo>0 </PageDisplayPageInfo>
     <PagePageInfo></PagePageInfo>
     <PageGraphPaper>0 </PageGraphPaper>
     <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
-    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0x1e</PageGraphPaperLineColor>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
     <PageReplayWindowPosition>0 83 147 492 372</PageReplayWindowPosition>
     <PageTable>
       <ID>123 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <Bounds>0.0075 0.0075 2.29326822917 6.06194444444 </Bounds>
+      <Bounds>0.0075 0.0075 2.29327 6.06194 </Bounds>
       <SubordinateToID>0</SubordinateToID>
       <SubordinateOffset>0 0</SubordinateOffset>
       <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0x2a</BackgroundColor>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0xffffffff</BackgroundColor>
       <AddNewData>1</AddNewData>
       <Locked>0</Locked>
       <AutoCreated>0</AutoCreated>
@@ -81,11 +81,11 @@
       <ID>122 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <Bounds>2.31076822917 0.01 13.2955555556 6.05944444444 </Bounds>
+      <Bounds>2.31077 0.01 13.2956 6.05944 </Bounds>
       <SubordinateToID>0</SubordinateToID>
       <SubordinateOffset>0 0</SubordinateOffset>
       <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
       <AddNewData>0</AddNewData>
       <Locked>0</Locked>
       <AutoCreated>1</AutoCreated>
@@ -122,9 +122,9 @@
       <BinGraphStackColumns>0</BinGraphStackColumns>
       <GraphShowPointProtectors>1</GraphShowPointProtectors>
       <GraphMajorTickStyle>1</GraphMajorTickStyle>
-      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMajorTickColor>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
       <GraphMinorTickStyle>0</GraphMinorTickStyle>
-      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMinorTickColor>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
       <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
       <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
       <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
@@ -565,6 +565,30 @@
 0.86
 </ColumnCells>
     </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>153 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>&#38;&#38;^% CurveFitFunctions %^&#38;&#38;</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>3</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>0</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
   </DataSet>
   <DataSourceServer>
     <ID>13 </ID>
