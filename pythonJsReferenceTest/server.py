@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, render_template
-import requests, csv
+import requests, csv, os
 from bs4 import BeautifulSoup
 from io import StringIO
+from PIL import Image
 
 app = Flask(__name__)
 
@@ -21,10 +22,14 @@ CFC_areaCoords = {
     "psa": (-64.6, -64.0),
     "spo": (-90, 0),  # South Pole (90S) can be represented as (90, 0)
 }
+
 pix_size =  256
 tiles = 3
-scale_factor = pix_size * tiles / 90 #90 is the max for long/lat magnitude
-CFC_areaCoords = {key: (lat * scale_factor, lon * scale_factor) for key, (lat, lon) in CFC_areaCoords.items()}
+scale_factor = pix_size * tiles / 180 #180 is the totaled max for long magnitude; /2 for lat
+
+# subtraction puts origin on top left as opposed to centre; then both coords are multiplied by 2 to compensate (actually might be bottom left when i think abt it but we can math that later
+CFC_areaCoords = {key: ((lat-90) * -scale_factor, (lon+180) * scale_factor/2) for key, (lat, lon) in CFC_areaCoords.items()}
+# print(CFC_areaCoords)
 
 @app.route('/get_flux_data', methods=['GET'])
 def get_flux_data():
@@ -84,7 +89,7 @@ def cfcRasterImage(no):
                 latestFilledData = (rows[i][0].split())
                 break  # Stop looking further
 
-        print(header[8].split('_')[1])
+        # print(header[8].split('_')[1])
         # data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in CFC_areaCoords] and len(header[i].split('_')) == 3 else header[i]): latestFilledData[i] for i in range(len(header))}
         data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in CFC_areaCoords] and len(header[i].split('_')) == 3 else ""): float(latestFilledData[i]) for i in range(len(header))}
         del data[""]
@@ -92,6 +97,42 @@ def cfcRasterImage(no):
         print(data)
     else:
         print(f"Failed to fetch CSV data. Status code: {response.status_code}")
+
+    #that was all data processing; now its time for image manu
+
+    images = []
+    for i in range(tiles):
+        xrow = []
+        for j in range(tiles):
+            img = Image.new("RGBA", (pix_size, pix_size), (0, 0, 0, 0)) #colour is that last tuple
+            # You can customize the image content here if needed
+            xrow.append(img)
+        images.append(xrow)
+
+    for point in data:
+        ySeg, xSeg = get_segment(tiles, point[0]/(pix_size*tiles)), get_segment(tiles, point[1]/(pix_size*tiles))
+        accessedImage = images[ySeg][xSeg]
+
+        print(f"y={ySeg}, x={xSeg}")
+        print(point)
+        subPoint = (point[1]-pix_size*xSeg, point[0]-pix_size*ySeg)
+        print(subPoint)
+        # print(accessedImage)
+
+
+    for i in range(len(images)):
+        for j in range(len(images[i])):
+            fileName = f"Overlay-CFC_{no}-{j}-{i}.png"
+            img.save(os.path.join("overlayImageFiles", fileName))
+
+
+def get_segment(tiles, x):
+    if 0 <= x <= 1:
+        segment_size = 1 / tiles
+        segment = int(x / segment_size)
+        return min(segment, tiles - 1)  # Ensure it doesn't go beyond tiles - 1
+    else:
+        raise ValueError("x should be in the range [0, 1]")
 
 
 @app.route('/', methods=['GET'])
