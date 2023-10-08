@@ -4,15 +4,28 @@ import { Map } from "leaflet";
 import HeatMapLayer from "./HeatmapLayer";
 import { useState } from "react";
 import { addressPoints } from "./addressPoints";
-  
 
-function Leaflet() {
-  const [map, setMap] = useState<Map | null>(null);
-  const combinedPoints = ([] as number[][]).concat(...addressPoints.map(item => item.points));
+export interface LeafletData {
+  threshold: number;
+  type: string;
+  points: number[][];
+}
+
+export type LeafletLayerDataTypes =
+  | "cfu"
+  | "cfc11"
+  | "cfc12"
+  | "cfc13"
+  | "ozone"
+  | "temperature";
+
+function Leaflet({ data }: { data: LeafletData[] }) {
+  const combinedPoints = ([] as number[][]).concat(
+    ...data.map((item) => item.points)
+  );
 
   return (
     <MapContainer
-      ref={setMap}
       center={[38.89511, -77.03637]}
       zoom={3}
       attributionControl={false}
