@@ -5,12 +5,6 @@ const Leaflet = dynamic(() => import("../components/Leaflet"), {
   ssr: false,
 });
 
-const Home = () => {
-  return (
-    <div>
-     <Leaflet />
-    </div>
-  );
-};
+const Home = () => <Leaflet />;
 
 export default Home;

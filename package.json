@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vgrid/react-leaflet-heatmap-layer": "^4.0.3",
     "clsx": "^2.0.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.284.0",
