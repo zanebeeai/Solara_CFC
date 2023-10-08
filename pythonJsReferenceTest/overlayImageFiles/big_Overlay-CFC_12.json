@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_dc86f5d50365ae1fc9a9842de82bbaec {
+                #map_034fd5a6b8c396f08ddd32d91787f0a2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -40,14 +40,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_dc86f5d50365ae1fc9a9842de82bbaec" ></div>
+            <div class="folium-map" id="map_034fd5a6b8c396f08ddd32d91787f0a2" ></div>
         
 </body>
 <script>
     
     
-            var map_dc86f5d50365ae1fc9a9842de82bbaec = L.map(
-                "map_dc86f5d50365ae1fc9a9842de82bbaec",
+            var map_034fd5a6b8c396f08ddd32d91787f0a2 = L.map(
+                "map_034fd5a6b8c396f08ddd32d91787f0a2",
                 {
                     center: [38.89511, -77.03637],
                     crs: L.CRS.EPSG3857,
@@ -61,16 +61,16 @@
 
         
     
-            var tile_layer_e5d230f6bb6d93c631bbe3370bd18afa = L.tileLayer(
+            var tile_layer_cb7149debe42a69f74393e345d8da64e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_dc86f5d50365ae1fc9a9842de82bbaec);
+            ).addTo(map_034fd5a6b8c396f08ddd32d91787f0a2);
         
     
-            var heat_map_1cf5c12a76f1940e04cd005a8f3cc6a3 = L.heatLayer(
+            var heat_map_9f0fd306231e74ad2a59cdc146d3438f = L.heatLayer(
                 [[82.5, -62.3, 195175.6], [72.6, -38.4, 195051.6], [71.3, -156.6, 195208.0], [53.0, -10.0, 195125.19999999998], [41.0, -124.0, 195336.0], [40.052, -105.585, 195142.0], [19.5, -154.8, 195205.19999999998], [19.5, -155.6, 195257.6], [-14.3, -170.6, 195572.0], [-40.7, 144.8, 195327.19999999998], [-64.6, -64.0, 194908.0], [-90.0, 0.0, 195299.6]],
                 {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
-            ).addTo(map_dc86f5d50365ae1fc9a9842de82bbaec);
+            ).addTo(map_034fd5a6b8c396f08ddd32d91787f0a2);
         
 </script>
 </html>

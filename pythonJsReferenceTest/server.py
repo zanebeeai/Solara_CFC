@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template
-import requests, csv, os, folium
+import requests, csv, os, folium, json
 from bs4 import BeautifulSoup
 from io import StringIO
 # from PIL import Image, ImageDraw
@@ -58,6 +58,103 @@ def get_flux_data():
 
     return jsonify({'error': 'Table not found'}), 404
 
+# input an array of dictionaries of fucking data lmao
+def mapDatas(dataSets):
+    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # maybe center this later
+    for data in dataSets:
+        #ill do multiple gradients give me a sec me
+        gradient = {.33: 'red', .66: 'brown', 1: 'green'}
+        HeatMap(data=df, gradient=gradient, radius=8, max_zoom=13).add_to(m)
+
+def sendData():
+    # get query terms
+    queryTerms = ['cfc12', 'cfc11']
+
+    gradientThresh = {
+        'cfc11': [220, 250, 300],
+        'cfc12': [460, 470, 500],
+        'cfc13': [0.1, 5, 20],
+        'ozone': [],
+        'temperature': [],
+        'solarFlux': [30, 100, 220],
+    }
+    bigData = []
+    for query in queryTerms:
+        data = pullData(query)
+        gradient_value = gradientThresh[query]
+
+        # Create a new dictionary with "gradient" as the first key
+        data_str = {'gradient': gradient_value, **data}
+
+        bigData.append(data_str)
+
+    formatted_data = []
+
+    for item in bigData:
+        formatted_item = {
+            'gradient': item['gradient']
+        }
+        for key, value in item.items():
+            if key != 'gradient':
+                formatted_key = f'({key[0]}, {key[1]})'
+                formatted_item[formatted_key] = value
+        formatted_data.append(formatted_item)
+
+    # Specify the path to the JSON file where you want to save the data
+    json_file_path = 'output.json'
+
+    print(bigData)
+
+    # Write the bigData array to the JSON file
+    with open(json_file_path, 'w') as json_file:
+        json.dump(formatted_data, json_file, indent=4)
+
+
+
+def pullData(query):
+    CFC_link_index = {
+        'cfc11': "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc11/combined/HATS_global_F11.txt",
+        'cfc12': "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc12/combined/HATS_global_F12.txt",
+        'cfc13': "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc113/combined/HATS_global_F113.txt",
+    }
+
+    response = requests.get(CFC_link_index[query])
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Convert the response content (CSV data) into a string
+        csv_data = response.text
+
+        # Use StringIO to treat the string as a file-like object
+        csv_file = StringIO(csv_data)
+
+        # Create a CSV reader object
+        csv_reader = csv.reader(csv_file)
+
+        rows = list(csv_reader)
+
+        # header row is index 67
+        print("Header row i think idk")
+        # both length 33
+        header = rows[67][0].split()
+        latestFilledData = 0
+        for i in range(len(rows) - 1, -1, -1):
+            if 'nan' not in rows[i][0].split():
+                latestFilledData = (rows[i][0].split())
+                break  # Stop looking further
+
+        # print(header[8].split('_')[1])
+        # data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in CFC_areaCoords] and len(header[i].split('_')) == 3 else header[i]): latestFilledData[i] for i in range(len(header))}
+        data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in
+                                                                                        CFC_areaCoords] and len(
+            header[i].split('_')) == 3 else ""): float(latestFilledData[i]) for i in range(len(header))}
+        del data[""]
+        return(data)
+        print(data)
+    else:
+        print(f"Failed to fetch CSV data. Status code: {response.status_code}")
+
+
 def cfcRasterImage(no):
     CFC_link_index = {
         11: "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc11/combined/HATS_global_F11.txt",
@@ -102,7 +199,8 @@ def cfcRasterImage(no):
     #that was all data processing; now its time for image manu
 
     scaleHeat = 400   #arbitrary scale value for heatmap
-    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # For example, Washington, D.C.
+
+    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # maybe center this later
     heat_data = [(point[0], point[1], size*scaleHeat) for point, size in data.items()]
     heatmap = folium.plugins.HeatMap(heat_data)
 
@@ -110,7 +208,7 @@ def cfcRasterImage(no):
     heatmap.add_to(m)
 
     # Save the map to an HTML file or display it
-    m.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.html"))
+    m.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.json"))
     # img.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.png"))
 
     # change this to slicing code
@@ -133,7 +231,7 @@ def get_segment(tiles, x):
 @app.route('/', methods=['GET'])
 def index():
     # print(get_flux_data())
-    cfcRasterImage(12)
+    sendData()
     return render_template('index.html')
 
 if __name__ == '__main__':
