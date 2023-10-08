@@ -54,35 +54,25 @@ def sendData():
     # get query terms
     queryTerms = ['cfc12', 'cfc11']
 
-    gradientThresh = {
-        'cfc11': [220, 250, 300],
-        'cfc12': [460, 470, 500],
-        'cfc13': [0.1, 5, 20],
-        'ozone': [],
-        'temperature': [],
-        'solarFlux': [30, 100, 220],
+    zeroT = {
+        'cfc11': [220, "PPT"],
+        'cfc12': [460, "PPT"],
+        'cfc13': [0.1, "PPT"],
+        'ozone': [0.1, "PPT"],
+        'temperature': [-100, "°"],
+        'solarFlux': [30, "SFU"],
     }
     bigData = []
+
     for query in queryTerms:
-        data = pullData(query)
-        gradient_value = gradientThresh[query]
+        data = []
+        data.append(zeroT[query])
 
-        # Create a new dictionary with "gradient" as the first key
-        data_str = {'gradient': gradient_value, **data}
+        queryData = pullData(query)
+        for d in queryData:
+            data.append([x for x in d]+[queryData[d]])
 
-        bigData.append(data_str)
-
-    formatted_data = []
-
-    for item in bigData:
-        formatted_item = {
-            'gradient': item['gradient']
-        }
-        for key, value in item.items():
-            if key != 'gradient':
-                formatted_key = f'({key[0]}, {key[1]})'
-                formatted_item[formatted_key] = value
-        formatted_data.append(formatted_item)
+        bigData.append(data)
 
     # Specify the path to the JSON file where you want to save the data
     json_file_path = 'output.json'
@@ -91,7 +81,7 @@ def sendData():
 
     # Write the bigData array to the JSON file
     with open(json_file_path, 'w') as json_file:
-        json.dump(formatted_data, json_file, indent=4)
+        json.dump(bigData, json_file, indent=4)
 
 
 
@@ -133,8 +123,9 @@ def pullData(query):
                                                                                         CFC_areaCoords] and len(
             header[i].split('_')) == 3 else ""): float(latestFilledData[i]) for i in range(len(header))}
         del data[""]
-        return(data)
         print(data)
+        return(data)
+
     else:
         print(f"Failed to fetch CSV data. Status code: {response.status_code}")
 
@@ -142,7 +133,7 @@ def pullData(query):
 def index():
     # print(get_flux_data())
     sendData()
-    return render_template('index.html')
+    return render_template('../pages/index.tsx')
 
 if __name__ == '__main__':
     app.run(debug=True)
