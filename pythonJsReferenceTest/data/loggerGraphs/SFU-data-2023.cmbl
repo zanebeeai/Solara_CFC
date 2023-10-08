@@ -1,0 +1,2051 @@
+﻿<Document>
+  <FileCoherence>1</FileCoherence>
+  <Version>3.16.2</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>Mar  8 2021 07:58:58</ApplicationBuildDateTime>
+  <FileName>SFU-data-2023.cmbl</FileName>
+  <FileIDString>2023-10-08 00:21:06Your name here1286125764</FileIDString>
+  <CreatorOS>2</CreatorOS>
+  <CreatorApp>1</CreatorApp>
+  <AbsoluteVersion>1</AbsoluteVersion>
+  <Radians>1</Radians>
+  <NumDerivativePoints>7</NumDerivativePoints>
+  <NumSmoothingPoints>7</NumSmoothingPoints>
+  <ShowZeroOnToolbar>0</ShowZeroOnToolbar>
+  <ShowDataMarkOnToolbar>0</ShowDataMarkOnToolbar>
+  <ShowGraphMatchOnToolbar>0</ShowGraphMatchOnToolbar>
+  <GraphMatchUseConstant>1</GraphMatchUseConstant>
+  <GraphMatchUseLinear>1</GraphMatchUseLinear>
+  <GraphMatchUseQuadratic>1</GraphMatchUseQuadratic>
+  <GraphMatchNumSections>0</GraphMatchNumSections>
+  <Stationery>0</Stationery>
+  <CreationDateTime>2023-10-07 15:58:05</CreationDateTime>
+  <ModifiedDateTime>2023-10-08 00:24:57</ModifiedDateTime>
+  <PageBounds>0 0 13.3055555556 6.06944444444</PageBounds>
+  <ScreenResolution>0 0 1919 1079</ScreenResolution>
+  <MathType>0</MathType>
+  <AllowOptionsDialogs>1</AllowOptionsDialogs>
+  <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <ReplayWindowPosition>0 83 147 492 372 1</ReplayWindowPosition>
+  <ReplayWindowSpeed>1</ReplayWindowSpeed>
+  <ReplayWindowRepeat>0</ReplayWindowRepeat>
+  <SensorConflictEnabled>1</SensorConflictEnabled>
+  <MathConstantValue>3.141592653590</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>0</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>pi</MathConstantName>
+  <Page>
+    <ID>114 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <PageTitle></PageTitle>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0xffffffff</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 83 147 492 372</PageReplayWindowPosition>
+    <PageGraphCartesian>
+      <ID>120 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>2.31077 0.01 13.2956 6.05944 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle></GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>116 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>1 116 118 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>900</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>120</GraphPlotYMin>
+      <GraphPlotYMax>340</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>100</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>100</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>1 118 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageTable>
+      <ID>121 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.0075 0.0075 2.29327 6.06194 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>1</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 2 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <TableColumn> 116 0.8 </TableColumn>
+      <TableColumn> 118 0.8 </TableColumn>
+      <StartIndex> 0 </StartIndex>
+      <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
+    </PageTable>
+  </Page>
+  <CurrentPageIndex>0</CurrentPageIndex>
+  <DataSet>
+    <ID>115 </ID>
+    <BroadcastTo>1 121 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Data Set</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>1</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>1</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <DataColumn>
+      <ID>116 </ID>
+      <BroadcastTo>3 17 120 121 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>X</DataObjectName>
+      <DataObjectShortName>x</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>1</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <ColumnUnits></ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1696738866</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>9</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>117</ColumnGroupID>
+      <ColumnCells>
+Z1 2:2023-01-01
+Z1 2:2023-01-01
+Z1 2:2023-01-01
+Z1 2:2023-01-02
+Z1 2:2023-01-02
+Z1 2:2023-01-02
+Z1 2:2023-01-03
+Z1 2:2023-01-03
+Z1 2:2023-01-03
+Z1 2:2023-01-03
+Z1 2:2023-01-04
+Z1 2:2023-01-04
+Z1 2:2023-01-04
+Z1 2:2023-01-05
+Z1 2:2023-01-05
+Z1 2:2023-01-05
+Z1 2:2023-01-06
+Z1 2:2023-01-06
+Z1 2:2023-01-06
+Z1 2:2023-01-07
+Z1 2:2023-01-07
+Z1 2:2023-01-07
+Z1 2:2023-01-08
+Z1 2:2023-01-08
+Z1 2:2023-01-08
+Z1 2:2023-01-08
+Z1 2:2023-01-08
+Z1 2:2023-01-09
+Z1 2:2023-01-09
+Z1 2:2023-01-09
+Z1 2:2023-01-10
+Z1 2:2023-01-10
+Z1 2:2023-01-10
+Z1 2:2023-01-11
+Z1 2:2023-01-11
+Z1 2:2023-01-11
+Z1 2:2023-01-12
+Z1 2:2023-01-12
+Z1 2:2023-01-12
+Z1 2:2023-01-13
+Z1 2:2023-01-13
+Z1 2:2023-01-13
+Z1 2:2023-01-14
+Z1 2:2023-01-14
+Z1 2:2023-01-14
+Z1 2:2023-01-15
+Z1 2:2023-01-15
+Z1 2:2023-01-15
+Z1 2:2023-01-16
+Z1 2:2023-01-16
+Z1 2:2023-01-16
+Z1 2:2023-01-17
+Z1 2:2023-01-17
+Z1 2:2023-01-17
+Z1 2:2023-01-18
+Z1 2:2023-01-18
+Z1 2:2023-01-18
+Z1 2:2023-01-19
+Z1 2:2023-01-19
+Z1 2:2023-01-19
+Z1 2:2023-01-20
+Z1 2:2023-01-20
+Z1 2:2023-01-20
+Z1 2:2023-01-21
+Z1 2:2023-01-21
+Z1 2:2023-01-21
+Z1 2:2023-01-22
+Z1 2:2023-01-22
+Z1 2:2023-01-22
+Z1 2:2023-01-23
+Z1 2:2023-01-23
+Z1 2:2023-01-23
+Z1 2:2023-01-24
+Z1 2:2023-01-24
+Z1 2:2023-01-24
+Z1 2:2023-01-25
+Z1 2:2023-01-25
+Z1 2:2023-01-25
+Z1 2:2023-01-26
+Z1 2:2023-01-26
+Z1 2:2023-01-26
+Z1 2:2023-01-27
+Z1 2:2023-01-27
+Z1 2:2023-01-27
+Z1 2:2023-01-28
+Z1 2:2023-01-28
+Z1 2:2023-01-28
+Z1 2:2023-01-29
+Z1 2:2023-01-29
+Z1 2:2023-01-29
+Z1 2:2023-01-30
+Z1 2:2023-01-30
+Z1 2:2023-01-30
+Z1 2:2023-01-31
+Z1 2:2023-01-31
+Z1 2:2023-01-31
+Z1 2:2023-02-01
+Z1 2:2023-02-01
+Z1 2:2023-02-01
+Z1 2:2023-02-02
+Z1 2:2023-02-02
+Z1 2:2023-02-02
+Z1 2:2023-02-03
+Z1 2:2023-02-03
+Z1 2:2023-02-03
+Z1 2:2023-02-04
+Z1 2:2023-02-04
+Z1 2:2023-02-04
+Z1 2:2023-02-05
+Z1 2:2023-02-05
+Z1 2:2023-02-05
+Z1 2:2023-02-06
+Z1 2:2023-02-06
+Z1 2:2023-02-06
+Z1 2:2023-02-07
+Z1 2:2023-02-07
+Z1 2:2023-02-07
+Z1 2:2023-02-08
+Z1 2:2023-02-08
+Z1 2:2023-02-08
+Z1 2:2023-02-09
+Z1 2:2023-02-09
+Z1 2:2023-02-09
+Z1 2:2023-02-10
+Z1 2:2023-02-10
+Z1 2:2023-02-10
+Z1 2:2023-02-11
+Z1 2:2023-02-11
+Z1 2:2023-02-11
+Z1 2:2023-02-12
+Z1 2:2023-02-12
+Z1 2:2023-02-12
+Z1 2:2023-02-13
+Z1 2:2023-02-13
+Z1 2:2023-02-13
+Z1 2:2023-02-13
+Z1 2:2023-02-14
+Z1 2:2023-02-14
+Z1 2:2023-02-14
+Z1 2:2023-02-15
+Z1 2:2023-02-15
+Z1 2:2023-02-15
+Z1 2:2023-02-16
+Z1 2:2023-02-16
+Z1 2:2023-02-16
+Z1 2:2023-02-17
+Z1 2:2023-02-17
+Z1 2:2023-02-17
+Z1 2:2023-02-18
+Z1 2:2023-02-18
+Z1 2:2023-02-18
+Z1 2:2023-02-18
+Z1 2:2023-02-19
+Z1 2:2023-02-19
+Z1 2:2023-02-19
+Z1 2:2023-02-20
+Z1 2:2023-02-20
+Z1 2:2023-02-20
+Z1 2:2023-02-21
+Z1 2:2023-02-21
+Z1 2:2023-02-21
+Z1 2:2023-02-22
+Z1 2:2023-02-22
+Z1 2:2023-02-22
+Z1 2:2023-02-23
+Z1 2:2023-02-23
+Z1 2:2023-02-23
+Z1 2:2023-02-24
+Z1 2:2023-02-24
+Z1 2:2023-02-24
+Z1 2:2023-02-25
+Z1 2:2023-02-25
+Z1 2:2023-02-25
+Z1 2:2023-02-26
+Z1 2:2023-02-26
+Z1 2:2023-02-26
+Z1 2:2023-02-27
+Z1 2:2023-02-27
+Z1 2:2023-02-27
+Z1 2:2023-02-28
+Z1 2:2023-02-28
+Z1 2:2023-02-28
+Z1 2:2023-03-01
+Z1 2:2023-03-01
+Z1 2:2023-03-01
+Z1 2:2023-03-02
+Z1 2:2023-03-02
+Z1 2:2023-03-02
+Z1 2:2023-03-03
+Z1 2:2023-03-03
+Z1 2:2023-03-03
+Z1 2:2023-03-04
+Z1 2:2023-03-04
+Z1 2:2023-03-04
+Z1 2:2023-03-05
+Z1 2:2023-03-05
+Z1 2:2023-03-05
+Z1 2:2023-03-06
+Z1 2:2023-03-06
+Z1 2:2023-03-06
+Z1 2:2023-03-07
+Z1 2:2023-03-07
+Z1 2:2023-03-07
+Z1 2:2023-03-08
+Z1 2:2023-03-08
+Z1 2:2023-03-08
+Z1 2:2023-03-09
+Z1 2:2023-03-09
+Z1 2:2023-03-09
+Z1 2:2023-03-10
+Z1 2:2023-03-10
+Z1 2:2023-03-10
+Z1 2:2023-03-11
+Z1 2:2023-03-11
+Z1 2:2023-03-11
+Z1 2:2023-03-12
+Z1 2:2023-03-12
+Z1 2:2023-03-12
+Z1 2:2023-03-13
+Z1 2:2023-03-13
+Z1 2:2023-03-13
+Z1 2:2023-03-14
+Z1 2:2023-03-14
+Z1 2:2023-03-14
+Z1 2:2023-03-15
+Z1 2:2023-03-15
+Z1 2:2023-03-15
+Z1 2:2023-03-16
+Z1 2:2023-03-16
+Z1 2:2023-03-16
+Z1 2:2023-03-17
+Z1 2:2023-03-17
+Z1 2:2023-03-17
+Z1 2:2023-03-18
+Z1 2:2023-03-18
+Z1 2:2023-03-18
+Z1 2:2023-03-19
+Z1 2:2023-03-19
+Z1 2:2023-03-19
+Z1 2:2023-03-20
+Z1 2:2023-03-20
+Z1 2:2023-03-20
+Z1 2:2023-03-21
+Z1 2:2023-03-21
+Z1 2:2023-03-21
+Z1 2:2023-03-22
+Z1 2:2023-03-22
+Z1 2:2023-03-22
+Z1 2:2023-03-23
+Z1 2:2023-03-23
+Z1 2:2023-03-23
+Z1 2:2023-03-24
+Z1 2:2023-03-24
+Z1 2:2023-03-24
+Z1 2:2023-03-25
+Z1 2:2023-03-25
+Z1 2:2023-03-25
+Z1 2:2023-03-26
+Z1 2:2023-03-26
+Z1 2:2023-03-26
+Z1 2:2023-03-27
+Z1 2:2023-03-27
+Z1 2:2023-03-27
+Z1 2:2023-03-28
+Z1 2:2023-03-28
+Z1 2:2023-03-28
+Z1 2:2023-03-29
+Z1 2:2023-03-29
+Z1 2:2023-03-29
+Z1 2:2023-03-30
+Z1 2:2023-03-30
+Z1 2:2023-03-30
+Z1 2:2023-03-31
+Z1 2:2023-03-31
+Z1 2:2023-03-31
+Z1 2:2023-04-01
+Z1 2:2023-04-01
+Z1 2:2023-04-01
+Z1 2:2023-04-02
+Z1 2:2023-04-02
+Z1 2:2023-04-02
+Z1 2:2023-04-03
+Z1 2:2023-04-03
+Z1 2:2023-04-03
+Z1 2:2023-04-04
+Z1 2:2023-04-04
+Z1 2:2023-04-04
+Z1 2:2023-04-05
+Z1 2:2023-04-05
+Z1 2:2023-04-05
+Z1 2:2023-04-06
+Z1 2:2023-04-06
+Z1 2:2023-04-06
+Z1 2:2023-04-07
+Z1 2:2023-04-07
+Z1 2:2023-04-07
+Z1 2:2023-04-08
+Z1 2:2023-04-08
+Z1 2:2023-04-08
+Z1 2:2023-04-09
+Z1 2:2023-04-09
+Z1 2:2023-04-09
+Z1 2:2023-04-10
+Z1 2:2023-04-10
+Z1 2:2023-04-10
+Z1 2:2023-04-11
+Z1 2:2023-04-11
+Z1 2:2023-04-11
+Z1 2:2023-04-12
+Z1 2:2023-04-12
+Z1 2:2023-04-12
+Z1 2:2023-04-13
+Z1 2:2023-04-13
+Z1 2:2023-04-13
+Z1 2:2023-04-14
+Z1 2:2023-04-14
+Z1 2:2023-04-14
+Z1 2:2023-04-15
+Z1 2:2023-04-15
+Z1 2:2023-04-15
+Z1 2:2023-04-16
+Z1 2:2023-04-16
+Z1 2:2023-04-16
+Z1 2:2023-04-17
+Z1 2:2023-04-17
+Z1 2:2023-04-17
+Z1 2:2023-04-18
+Z1 2:2023-04-18
+Z1 2:2023-04-18
+Z1 2:2023-04-19
+Z1 2:2023-04-19
+Z1 2:2023-04-19
+Z1 2:2023-04-20
+Z1 2:2023-04-20
+Z1 2:2023-04-20
+Z1 2:2023-04-21
+Z1 2:2023-04-21
+Z1 2:2023-04-21
+Z1 2:2023-04-22
+Z1 2:2023-04-22
+Z1 2:2023-04-22
+Z1 2:2023-04-23
+Z1 2:2023-04-23
+Z1 2:2023-04-23
+Z1 2:2023-04-24
+Z1 2:2023-04-24
+Z1 2:2023-04-24
+Z1 2:2023-04-25
+Z1 2:2023-04-25
+Z1 2:2023-04-25
+Z1 2:2023-04-26
+Z1 2:2023-04-26
+Z1 2:2023-04-26
+Z1 2:2023-04-27
+Z1 2:2023-04-27
+Z1 2:2023-04-27
+Z1 2:2023-04-28
+Z1 2:2023-04-28
+Z1 2:2023-04-28
+Z1 2:2023-04-29
+Z1 2:2023-04-29
+Z1 2:2023-04-29
+Z1 2:2023-04-30
+Z1 2:2023-04-30
+Z1 2:2023-04-30
+Z1 2:2023-05-01
+Z1 2:2023-05-01
+Z1 2:2023-05-01
+Z1 2:2023-05-02
+Z1 2:2023-05-02
+Z1 2:2023-05-02
+Z1 2:2023-05-03
+Z1 2:2023-05-03
+Z1 2:2023-05-03
+Z1 2:2023-05-04
+Z1 2:2023-05-04
+Z1 2:2023-05-04
+Z1 2:2023-05-05
+Z1 2:2023-05-05
+Z1 2:2023-05-05
+Z1 2:2023-05-06
+Z1 2:2023-05-06
+Z1 2:2023-05-06
+Z1 2:2023-05-07
+Z1 2:2023-05-07
+Z1 2:2023-05-07
+Z1 2:2023-05-08
+Z1 2:2023-05-08
+Z1 2:2023-05-08
+Z1 2:2023-05-09
+Z1 2:2023-05-09
+Z1 2:2023-05-09
+Z1 2:2023-05-10
+Z1 2:2023-05-10
+Z1 2:2023-05-10
+Z1 2:2023-05-11
+Z1 2:2023-05-11
+Z1 2:2023-05-11
+Z1 2:2023-05-12
+Z1 2:2023-05-12
+Z1 2:2023-05-12
+Z1 2:2023-05-13
+Z1 2:2023-05-13
+Z1 2:2023-05-13
+Z1 2:2023-05-14
+Z1 2:2023-05-14
+Z1 2:2023-05-14
+Z1 2:2023-05-15
+Z1 2:2023-05-15
+Z1 2:2023-05-15
+Z1 2:2023-05-16
+Z1 2:2023-05-16
+Z1 2:2023-05-16
+Z1 2:2023-05-17
+Z1 2:2023-05-17
+Z1 2:2023-05-17
+Z1 2:2023-05-18
+Z1 2:2023-05-18
+Z1 2:2023-05-18
+Z1 2:2023-05-19
+Z1 2:2023-05-19
+Z1 2:2023-05-19
+Z1 2:2023-05-20
+Z1 2:2023-05-20
+Z1 2:2023-05-20
+Z1 2:2023-05-21
+Z1 2:2023-05-21
+Z1 2:2023-05-21
+Z1 2:2023-05-22
+Z1 2:2023-05-22
+Z1 2:2023-05-22
+Z1 2:2023-05-23
+Z1 2:2023-05-23
+Z1 2:2023-05-23
+Z1 2:2023-05-24
+Z1 2:2023-05-24
+Z1 2:2023-05-24
+Z1 2:2023-05-25
+Z1 2:2023-05-25
+Z1 2:2023-05-25
+Z1 2:2023-05-26
+Z1 2:2023-05-26
+Z1 2:2023-05-26
+Z1 2:2023-05-27
+Z1 2:2023-05-27
+Z1 2:2023-05-27
+Z1 2:2023-05-28
+Z1 2:2023-05-28
+Z1 2:2023-05-28
+Z1 2:2023-05-29
+Z1 2:2023-05-29
+Z1 2:2023-05-29
+Z1 2:2023-05-30
+Z1 2:2023-05-30
+Z1 2:2023-05-30
+Z1 2:2023-05-31
+Z1 2:2023-05-31
+Z1 2:2023-05-31
+Z1 2:2023-06-01
+Z1 2:2023-06-01
+Z1 2:2023-06-01
+Z1 2:2023-06-02
+Z1 2:2023-06-02
+Z1 2:2023-06-02
+Z1 2:2023-06-03
+Z1 2:2023-06-03
+Z1 2:2023-06-03
+Z1 2:2023-06-04
+Z1 2:2023-06-04
+Z1 2:2023-06-04
+Z1 2:2023-06-05
+Z1 2:2023-06-05
+Z1 2:2023-06-05
+Z1 2:2023-06-06
+Z1 2:2023-06-06
+Z1 2:2023-06-06
+Z1 2:2023-06-07
+Z1 2:2023-06-07
+Z1 2:2023-06-07
+Z1 2:2023-06-08
+Z1 2:2023-06-08
+Z1 2:2023-06-08
+Z1 2:2023-06-09
+Z1 2:2023-06-09
+Z1 2:2023-06-09
+Z1 2:2023-06-10
+Z1 2:2023-06-10
+Z1 2:2023-06-10
+Z1 2:2023-06-11
+Z1 2:2023-06-11
+Z1 2:2023-06-11
+Z1 2:2023-06-12
+Z1 2:2023-06-12
+Z1 2:2023-06-12
+Z1 2:2023-06-13
+Z1 2:2023-06-13
+Z1 2:2023-06-13
+Z1 2:2023-06-14
+Z1 2:2023-06-14
+Z1 2:2023-06-14
+Z1 2:2023-06-15
+Z1 2:2023-06-15
+Z1 2:2023-06-15
+Z1 2:2023-06-16
+Z1 2:2023-06-16
+Z1 2:2023-06-16
+Z1 2:2023-06-17
+Z1 2:2023-06-17
+Z1 2:2023-06-17
+Z1 2:2023-06-18
+Z1 2:2023-06-18
+Z1 2:2023-06-18
+Z1 2:2023-06-19
+Z1 2:2023-06-19
+Z1 2:2023-06-19
+Z1 2:2023-06-20
+Z1 2:2023-06-20
+Z1 2:2023-06-20
+Z1 2:2023-06-21
+Z1 2:2023-06-21
+Z1 2:2023-06-21
+Z1 2:2023-06-22
+Z1 2:2023-06-22
+Z1 2:2023-06-22
+Z1 2:2023-06-23
+Z1 2:2023-06-23
+Z1 2:2023-06-23
+Z1 2:2023-06-24
+Z1 2:2023-06-24
+Z1 2:2023-06-24
+Z1 2:2023-06-25
+Z1 2:2023-06-25
+Z1 2:2023-06-25
+Z1 2:2023-06-26
+Z1 2:2023-06-26
+Z1 2:2023-06-26
+Z1 2:2023-06-27
+Z1 2:2023-06-27
+Z1 2:2023-06-27
+Z1 2:2023-06-28
+Z1 2:2023-06-28
+Z1 2:2023-06-28
+Z1 2:2023-06-29
+Z1 2:2023-06-29
+Z1 2:2023-06-29
+Z1 2:2023-06-30
+Z1 2:2023-06-30
+Z1 2:2023-06-30
+Z1 2:2023-07-01
+Z1 2:2023-07-01
+Z1 2:2023-07-01
+Z1 2:2023-07-02
+Z1 2:2023-07-02
+Z1 2:2023-07-02
+Z1 2:2023-07-03
+Z1 2:2023-07-03
+Z1 2:2023-07-03
+Z1 2:2023-07-04
+Z1 2:2023-07-04
+Z1 2:2023-07-04
+Z1 2:2023-07-05
+Z1 2:2023-07-05
+Z1 2:2023-07-05
+Z1 2:2023-07-06
+Z1 2:2023-07-06
+Z1 2:2023-07-06
+Z1 2:2023-07-07
+Z1 2:2023-07-07
+Z1 2:2023-07-07
+Z1 2:2023-07-08
+Z1 2:2023-07-08
+Z1 2:2023-07-08
+Z1 2:2023-07-09
+Z1 2:2023-07-09
+Z1 2:2023-07-09
+Z1 2:2023-07-10
+Z1 2:2023-07-10
+Z1 2:2023-07-10
+Z1 2:2023-07-11
+Z1 2:2023-07-11
+Z1 2:2023-07-11
+Z1 2:2023-07-12
+Z1 2:2023-07-12
+Z1 2:2023-07-12
+Z1 2:2023-07-13
+Z1 2:2023-07-13
+Z1 2:2023-07-13
+Z1 2:2023-07-14
+Z1 2:2023-07-14
+Z1 2:2023-07-14
+Z1 2:2023-07-15
+Z1 2:2023-07-15
+Z1 2:2023-07-15
+Z1 2:2023-07-16
+Z1 2:2023-07-16
+Z1 2:2023-07-16
+Z1 2:2023-07-17
+Z1 2:2023-07-17
+Z1 2:2023-07-17
+Z1 2:2023-07-18
+Z1 2:2023-07-18
+Z1 2:2023-07-18
+Z1 2:2023-07-19
+Z1 2:2023-07-19
+Z1 2:2023-07-19
+Z1 2:2023-07-20
+Z1 2:2023-07-20
+Z1 2:2023-07-20
+Z1 2:2023-07-21
+Z1 2:2023-07-21
+Z1 2:2023-07-21
+Z1 2:2023-07-22
+Z1 2:2023-07-22
+Z1 2:2023-07-22
+Z1 2:2023-07-23
+Z1 2:2023-07-23
+Z1 2:2023-07-23
+Z1 2:2023-07-24
+Z1 2:2023-07-24
+Z1 2:2023-07-24
+Z1 2:2023-07-25
+Z1 2:2023-07-25
+Z1 2:2023-07-25
+Z1 2:2023-07-26
+Z1 2:2023-07-26
+Z1 2:2023-07-26
+Z1 2:2023-07-27
+Z1 2:2023-07-27
+Z1 2:2023-07-27
+Z1 2:2023-07-28
+Z1 2:2023-07-28
+Z1 2:2023-07-28
+Z1 2:2023-07-29
+Z1 2:2023-07-29
+Z1 2:2023-07-29
+Z1 2:2023-07-30
+Z1 2:2023-07-30
+Z1 2:2023-07-30
+Z1 2:2023-07-31
+Z1 2:2023-07-31
+Z1 2:2023-07-31
+Z1 2:2023-08-01
+Z1 2:2023-08-01
+Z1 2:2023-08-01
+Z1 2:2023-08-02
+Z1 2:2023-08-02
+Z1 2:2023-08-02
+Z1 2:2023-08-03
+Z1 2:2023-08-03
+Z1 2:2023-08-03
+Z1 2:2023-08-04
+Z1 2:2023-08-04
+Z1 2:2023-08-04
+Z1 2:2023-08-05
+Z1 2:2023-08-05
+Z1 2:2023-08-05
+Z1 2:2023-08-06
+Z1 2:2023-08-06
+Z1 2:2023-08-06
+Z1 2:2023-08-07
+Z1 2:2023-08-07
+Z1 2:2023-08-07
+Z1 2:2023-08-08
+Z1 2:2023-08-08
+Z1 2:2023-08-08
+Z1 2:2023-08-09
+Z1 2:2023-08-09
+Z1 2:2023-08-09
+Z1 2:2023-08-10
+Z1 2:2023-08-10
+Z1 2:2023-08-10
+Z1 2:2023-08-11
+Z1 2:2023-08-11
+Z1 2:2023-08-11
+Z1 2:2023-08-12
+Z1 2:2023-08-12
+Z1 2:2023-08-12
+Z1 2:2023-08-13
+Z1 2:2023-08-13
+Z1 2:2023-08-13
+Z1 2:2023-08-14
+Z1 2:2023-08-14
+Z1 2:2023-08-14
+Z1 2:2023-08-15
+Z1 2:2023-08-15
+Z1 2:2023-08-15
+Z1 2:2023-08-16
+Z1 2:2023-08-16
+Z1 2:2023-08-16
+Z1 2:2023-08-17
+Z1 2:2023-08-17
+Z1 2:2023-08-17
+Z1 2:2023-08-18
+Z1 2:2023-08-18
+Z1 2:2023-08-18
+Z1 2:2023-08-19
+Z1 2:2023-08-19
+Z1 2:2023-08-19
+Z1 2:2023-08-20
+Z1 2:2023-08-20
+Z1 2:2023-08-20
+Z1 2:2023-08-21
+Z1 2:2023-08-21
+Z1 2:2023-08-21
+Z1 2:2023-08-22
+Z1 2:2023-08-22
+Z1 2:2023-08-22
+Z1 2:2023-08-23
+Z1 2:2023-08-23
+Z1 2:2023-08-23
+Z1 2:2023-08-24
+Z1 2:2023-08-24
+Z1 2:2023-08-24
+Z1 2:2023-08-25
+Z1 2:2023-08-25
+Z1 2:2023-08-25
+Z1 2:2023-08-26
+Z1 2:2023-08-26
+Z1 2:2023-08-26
+Z1 2:2023-08-27
+Z1 2:2023-08-27
+Z1 2:2023-08-27
+Z1 2:2023-08-28
+Z1 2:2023-08-28
+Z1 2:2023-08-28
+Z1 2:2023-08-29
+Z1 2:2023-08-29
+Z1 2:2023-08-29
+Z1 2:2023-08-30
+Z1 2:2023-08-30
+Z1 2:2023-08-30
+Z1 2:2023-08-31
+Z1 2:2023-08-31
+Z1 2:2023-08-31
+Z1 2:2023-09-01
+Z1 2:2023-09-01
+Z1 2:2023-09-01
+Z1 2:2023-09-02
+Z1 2:2023-09-02
+Z1 2:2023-09-02
+Z1 2:2023-09-03
+Z1 2:2023-09-03
+Z1 2:2023-09-03
+Z1 2:2023-09-04
+Z1 2:2023-09-04
+Z1 2:2023-09-04
+Z1 2:2023-09-05
+Z1 2:2023-09-05
+Z1 2:2023-09-05
+Z1 2:2023-09-06
+Z1 2:2023-09-06
+Z1 2:2023-09-06
+Z1 2:2023-09-07
+Z1 2:2023-09-07
+Z1 2:2023-09-07
+Z1 2:2023-09-08
+Z1 2:2023-09-08
+Z1 2:2023-09-08
+Z1 2:2023-09-09
+Z1 2:2023-09-09
+Z1 2:2023-09-09
+Z1 2:2023-09-10
+Z1 2:2023-09-10
+Z1 2:2023-09-10
+Z1 2:2023-09-11
+Z1 2:2023-09-11
+Z1 2:2023-09-11
+Z1 2:2023-09-12
+Z1 2:2023-09-12
+Z1 2:2023-09-12
+Z1 2:2023-09-13
+Z1 2:2023-09-13
+Z1 2:2023-09-13
+Z1 2:2023-09-14
+Z1 2:2023-09-14
+Z1 2:2023-09-14
+Z1 2:2023-09-15
+Z1 2:2023-09-15
+Z1 2:2023-09-15
+Z1 2:2023-09-16
+Z1 2:2023-09-16
+Z1 2:2023-09-16
+Z1 2:2023-09-17
+Z1 2:2023-09-17
+Z1 2:2023-09-17
+Z1 2:2023-09-18
+Z1 2:2023-09-18
+Z1 2:2023-09-18
+Z1 2:2023-09-19
+Z1 2:2023-09-19
+Z1 2:2023-09-19
+Z1 2:2023-09-20
+Z1 2:2023-09-20
+Z1 2:2023-09-20
+Z1 2:2023-09-21
+Z1 2:2023-09-21
+Z1 2:2023-09-21
+Z1 2:2023-09-22
+Z1 2:2023-09-22
+Z1 2:2023-09-22
+Z1 2:2023-09-23
+Z1 2:2023-09-23
+Z1 2:2023-09-23
+Z1 2:2023-09-24
+Z1 2:2023-09-24
+Z1 2:2023-09-24
+Z1 2:2023-09-25
+Z1 2:2023-09-25
+Z1 2:2023-09-25
+Z1 2:2023-09-26
+Z1 2:2023-09-26
+Z1 2:2023-09-26
+Z1 2:2023-09-27
+Z1 2:2023-09-27
+Z1 2:2023-09-27
+Z1 2:2023-09-28
+Z1 2:2023-09-28
+Z1 2:2023-09-28
+Z1 2:2023-09-29
+Z1 2:2023-09-29
+Z1 2:2023-09-29
+Z1 2:2023-09-30
+Z1 2:2023-09-30
+Z1 2:2023-09-30
+Z1 2:2023-10-01
+Z1 2:2023-10-01
+Z1 2:2023-10-01
+Z1 2:2023-10-02
+Z1 2:2023-10-02
+Z1 2:2023-10-02
+Z1 2:2023-10-03
+Z1 2:2023-10-03
+Z1 2:2023-10-03
+Z1 2:2023-10-04
+Z1 2:2023-10-04
+Z1 2:2023-10-04
+Z1 2:2023-10-05
+Z1 2:2023-10-05
+Z1 2:2023-10-05
+Z1 2:2023-10-06
+Z1 2:2023-10-06
+Z1 2:2023-10-06
+Z1 2:2023-10-07
+Z1 2:2023-10-07
+Z1 2:2023-10-07
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>118 </ID>
+      <BroadcastTo>3 17 120 121 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Y</DataObjectName>
+      <DataObjectShortName>y</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>1</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <ColumnUnits></ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1696738866</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>8</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>119</ColumnGroupID>
+      <ColumnCells>
+147.9
+147.5
+146.5
+143.4
+141.5
+140.7
+150.3
+146.9
+143.6
+142.4
+143.7
+146
+142.6
+150
+149.2
+149
+167.7
+166.7
+166.3
+172.5
+173
+173
+176.9
+177.8
+176.4
+173.4
+171.5
+181.8
+184.7
+182.1
+192.5
+186.6
+183.8
+190.2
+188.7
+194.2
+199.9
+204.7
+201.1
+211.5
+201.7
+208.1
+214.9
+220.4
+231.5
+237
+226.7
+224.3
+223.3
+220.7
+225.5
+216.9
+214.6
+214.2
+210.1
+213.2
+212.1
+217.4
+218.9
+222.8
+217.1
+210.6
+212.6
+205.1
+202.1
+198.8
+196.2
+192.3
+199.7
+183.4
+183.2
+185.9
+178.1
+174.6
+171.1
+170.1
+166.5
+165.3
+147.8
+146
+141.9
+140.1
+140.5
+136.6
+132.7
+133.4
+131
+130.5
+132.9
+130.5
+131.6
+131.9
+131.5
+135.2
+132.9
+134.1
+130.7
+129.6
+131.9
+130.8
+131
+130.6
+131.5
+130.7
+131
+136.9
+135.1
+137.7
+137.8
+140
+141.9
+149.6
+152.4
+153.1
+176.2
+179.7
+180.2
+187.1
+192.3
+208.8
+202.7
+209.1
+196.4
+212.4
+202.3
+206.9
+210.7
+204.1
+204.6
+193.9
+194.6
+192.5
+185.1
+183.3
+184.4
+182.1
+175
+175.3
+174.1
+170.8
+169.5
+167.4
+162.9
+159.2
+164.1
+161.1
+335
+177.7
+164.4
+163.6
+163.3
+161.7
+162.3
+165.2
+164.2
+159
+156.3
+155.9
+156.8
+157.4
+157.9
+148.4
+148.6
+149.8
+147.2
+145.1
+147.9
+156.4
+160.7
+183.5
+149.4
+273.7
+175.9
+155.6
+155.9
+156.5
+157.6
+158.1
+153.9
+166.6
+157.9
+159.7
+154.3
+159
+158.2
+161.9
+165.8
+168.1
+172.6
+187.5
+168.6
+187.8
+178.6
+176.8
+189.6
+176.8
+180.7
+183.8
+185
+186.8
+177.2
+177.5
+180.8
+173.5
+179.2
+175.4
+176.7
+176.2
+173.2
+169.8
+168.8
+169.6
+158.7
+155.3
+154.8
+146.5
+148.1
+148.1
+141.9
+141.5
+141.4
+138.2
+136.9
+137.8
+132.1
+134.2
+136.1
+133.2
+133.9
+133.5
+134.5
+132.9
+136.3
+133.8
+139
+139.8
+140.6
+141.4
+142.7
+156.9
+154.8
+152.9
+149.6
+150.4
+150.8
+152.8
+157.7
+155
+150.1
+150
+148.7
+159.1
+156.6
+161.1
+159.9
+159.4
+156.3
+161.3
+158.6
+153.9
+160.4
+157.5
+157.3
+158.3
+158.1
+161.6
+151.4
+147.3
+148.2
+137.2
+140
+135.9
+131.4
+129
+129.8
+126
+125.1
+125.2
+127.2
+126.7
+128.5
+131.6
+133.5
+134.7
+135
+135.7
+134.7
+136.2
+136.7
+135.3
+137.6
+137.2
+137
+133.4
+136.6
+139.1
+138.9
+136.2
+138.6
+141.4
+140.7
+145.3
+140.8
+140.3
+144.2
+145.1
+144
+146.9
+154.6
+154.7
+152.6
+157.8
+160.4
+160.7
+170.7
+172.3
+175.2
+180.7
+176.9
+180.3
+174.4
+179.1
+174.7
+174.5
+167.8
+165.4
+156.6
+154.4
+151.2
+153.7
+148.3
+149.4
+151.3
+148.4
+147.7
+142
+152.7
+144
+145.1
+142.7
+141.4
+136.2
+136.7
+135
+134.5
+135.5
+133.7
+133.2
+132.3
+133
+142.1
+138.2
+137.7
+137.6
+142.6
+141.6
+155.7
+151.8
+161.6
+159.9
+158
+153.7
+160.5
+155.8
+151.8
+157.4
+150.1
+152
+156.3
+159.2
+157.4
+160
+158.7
+164.3
+166.9
+164.7
+162.6
+164.2
+164.7
+164.3
+156.6
+154.5
+157.8
+162.1
+160
+186.5
+164.2
+175.1
+168
+171.7
+198.4
+176.7
+170
+173.4
+170.1
+167.7
+166.7
+165.1
+155
+152.2
+150
+146.7
+146.8
+147.2
+141.2
+142.7
+141.1
+138.7
+137.4
+135.7
+134.8
+137.3
+137
+139.4
+141
+145.3
+152.3
+154.1
+164.5
+163.6
+168.5
+166.8
+166.3
+173.7
+175.1
+168.3
+167.3
+166.9
+164.2
+165.5
+162.6
+163.1
+158.8
+157.9
+174.7
+168.2
+159.1
+155.6
+156
+153.4
+152.4
+152.9
+157.4
+158.1
+161.1
+158.1
+155.4
+155.4
+153.3
+159.1
+158.6
+159.6
+165.7
+166.5
+167.8
+166
+165.9
+172.2
+161.8
+168.5
+171
+166.7
+166.9
+170.5
+167.4
+169.3
+166.7
+170.4
+173.2
+169.6
+173.4
+174.1
+173.8
+174
+176.9
+176.9
+172.3
+172.1
+175.1
+172.4
+173.6
+174.4
+182.2
+169.3
+169.4
+165.1
+166.1
+170.2
+159.5
+158.6
+157.5
+152
+150.7
+153.7
+148.9
+150.9
+150.7
+149.2
+148
+150.2
+155.7
+157.9
+159.1
+159.4
+162.2
+161.5
+165.9
+163.2
+164.8
+169.4
+169.4
+171.7
+175.5
+174.3
+177.1
+239.8
+186
+177.7
+181.1
+182.2
+182
+183.7
+178.8
+177.2
+175.4
+175.2
+175.3
+168.7
+166.1
+164.9
+159
+159.9
+159.9
+158
+162.9
+161.9
+157.8
+156.2
+159.1
+155
+160.1
+160.9
+168.4
+167.6
+167.4
+166.3
+163.9
+165.3
+169.8
+171
+167.5
+179.6
+175.9
+214.1
+182.3
+179
+177
+169.9
+172.8
+168.7
+159.2
+159.8
+159.2
+160.4
+162.9
+162.8
+165.2
+166.8
+165.4
+166.7
+165.9
+167.3
+183.7
+185.2
+187.3
+190.3
+196.9
+194.3
+205.1
+220.6
+223.2
+198
+199.7
+202.8
+203.8
+209.7
+201.8
+188.9
+186.6
+187.5
+183.1
+184.5
+189.6
+187.4
+190.4
+187.3
+192.7
+185.9
+233.9
+204
+225.7
+199.7
+198.8
+195.1
+200.1
+188.3
+190.3
+185
+178.8
+178.5
+181.5
+180.5
+180
+183
+180.2
+178
+177.7
+173.2
+170.3
+171.4
+172.9
+174.4
+174.4
+176.5
+172.6
+176
+169.8
+170.5
+184.1
+173.3
+173.4
+176.7
+193.1
+184.1
+182.2
+179.5
+179.7
+175.2
+182.5
+182.4
+186.7
+179.6
+179.9
+176.7
+175.4
+178.1
+173.3
+170.1
+167.7
+170.5
+171.1
+175.8
+174.9
+176.2
+180.8
+209.4
+172.2
+178.5
+173.9
+173.5
+174.5
+178
+161.7
+163.4
+162.1
+157.3
+157.7
+154.9
+164.9
+160
+162.5
+159.1
+157
+154.8
+149.9
+152.2
+152.9
+152
+154.4
+155.3
+157.2
+158.1
+157.5
+161.5
+162.1
+160.9
+164.6
+164.2
+165
+157.2
+155.7
+155.2
+151.9
+154.4
+152.6
+155.5
+154.3
+152.1
+148.3
+149.8
+149.7
+152.7
+152.2
+156.6
+154.5
+154.4
+168.8
+154.1
+150.3
+148.5
+147
+147.3
+150.1
+140.9
+141.9
+140.9
+142.3
+142.2
+144.4
+143.7
+144.5
+143
+145.1
+144.5
+145
+142.7
+145
+149.5
+142.6
+141.2
+145.2
+140.2
+142.5
+142.1
+138.8
+138.3
+140.3
+133.8
+133.6
+130.2
+132.4
+132.8
+132.8
+139.7
+138.4
+138.4
+138.9
+145.2
+147.5
+146
+149.4
+149.2
+157.8
+163.3
+162.9
+160.1
+163.4
+163.5
+161.3
+163.7
+278.6
+165.6
+166.2
+168.2
+178.1
+178.8
+173.7
+157
+155.5
+150.1
+143.9
+144.4
+142.3
+149.7
+146.9
+150.8
+139.7
+140.6
+143.2
+144.9
+141.9
+141.4
+144.8
+146.1
+146.5
+152.2
+156
+158.9
+162.3
+167.6
+179.4
+160.7
+156.8
+156.8
+167.3
+169.4
+172.2
+190
+177
+187.7
+175.5
+174.1
+175.3
+170.1
+174.8
+173.5
+172
+171.1
+170.6
+167.8
+165.7
+164.4
+156.2
+156.7
+154
+152.2
+148.4
+147.7
+150.6
+155.5
+153
+161.6
+159.5
+161.3
+159.8
+161.5
+161.1
+156.8
+157.7
+153.9
+150.4
+153.8
+156.1
+151
+155.1
+153.9
+155.8
+156.1
+157.6
+156.6
+155.3
+155.7
+155.1
+157
+161.8
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSourceServer>
+    <ID>13 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+  </DataSourceServer>
+  <MBLBrain>
+    <MBLCollectionUserCollectMode>0</MBLCollectionUserCollectMode>
+    <MBLCollectionDropCounterMode>0</MBLCollectionDropCounterMode>
+    <MBLCollectionTimeUnit>1</MBLCollectionTimeUnit>
+    <MBLCollectionSampleAtZero>1</MBLCollectionSampleAtZero>
+    <MBLCollectionRepeat>0</MBLCollectionRepeat>
+    <MBLCollectionEnhancedTiming>0</MBLCollectionEnhancedTiming>
+    <MBLFastStart>0</MBLFastStart>
+    <MBLCollectionDeltaT>1</MBLCollectionDeltaT>
+    <MBLCollectionNumSamples>11</MBLCollectionNumSamples>
+    <MBLCollectionMaxDuration>10</MBLCollectionMaxDuration>
+    <MBLCollectionOversampling>1</MBLCollectionOversampling>
+    <MBLCollectionNumEWEColumns>1</MBLCollectionNumEWEColumns>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName>Entry</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Entry</MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLCollectionSelectedEventTime>0</MBLCollectionSelectedEventTime>
+    <MBLCollectionSelectedEventName>Event Number</MBLCollectionSelectedEventName>
+    <MBLCollectionSelectedEventShortName>Event</MBLCollectionSelectedEventShortName>
+    <MBLCollectionSelectedEventUnits></MBLCollectionSelectedEventUnits>
+    <MBLCollectionEndDigitalAfterNum>0</MBLCollectionEndDigitalAfterNum>
+    <MBLCollectionNumDigitalEvents>10</MBLCollectionNumDigitalEvents>
+    <MBLCollectionTriggerEnabled>0</MBLCollectionTriggerEnabled>
+    <MBLTriggerType>0</MBLTriggerType>
+    <MBLTriggerValue>0</MBLTriggerValue>
+    <MBLTriggerUseConstant>0</MBLTriggerUseConstant>
+    <MBLTriggerConstant></MBLTriggerConstant>
+    <MBLTriggerPreTriggerData>0</MBLTriggerPreTriggerData>
+    <MBLRadiationInterval>5</MBLRadiationInterval>
+    <MBLRadiationIntervalTimeUnit>1</MBLRadiationIntervalTimeUnit>
+    <MBLStoreLatestMax>0</MBLStoreLatestMax>
+    <MBLEWEAverageData>0</MBLEWEAverageData>
+    <MBLSEAverageData>0</MBLSEAverageData>
+    <MBLContinuous>0</MBLContinuous>
+    <MBLCollectionMiniGCStartTemp>35</MBLCollectionMiniGCStartTemp>
+    <MBLCollectionMiniGCHoldTime>2</MBLCollectionMiniGCHoldTime>
+    <MBLCollectionMiniGCRampRate>5</MBLCollectionMiniGCRampRate>
+    <MBLCollectionMiniGCFinalTemp>65</MBLCollectionMiniGCFinalTemp>
+    <MBLCollectionMiniGCFinalHoldTime>12</MBLCollectionMiniGCFinalHoldTime>
+    <MBLCollectionMiniGCTotalLength>20</MBLCollectionMiniGCTotalLength>
+    <MBLCollectionMiniGCPressure>7</MBLCollectionMiniGCPressure>
+    <MBLGoogleMapsMarkerOptions>0</MBLGoogleMapsMarkerOptions>
+    <MBLGoogleMapsOpenAnnotations>0</MBLGoogleMapsOpenAnnotations>
+    <GoogleMapsSettings>
+      <GoogleMapsLatitudeColumnID>0</GoogleMapsLatitudeColumnID>
+      <GoogleMapsLongitudeColumnID>0</GoogleMapsLongitudeColumnID>
+      <GoogleMapsShowMarkers>1</GoogleMapsShowMarkers>
+      <GoogleMapsMarkerOptions>0</GoogleMapsMarkerOptions>
+      <GoogleMapsValueColumnID>600000</GoogleMapsValueColumnID>
+      <GoogleMapsOpenAnnotations>0</GoogleMapsOpenAnnotations>
+      <GoogleMapsDrawLine>0</GoogleMapsDrawLine>
+      <GoogleMapsDrawLineSingleColor>0</GoogleMapsDrawLineSingleColor>
+      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x2e</GoogleMapsingleColor>
+      <GoogleMapsDrawLineColumnID>1</GoogleMapsDrawLineColumnID>
+      <GoogleMapsDrawLineAutoScale>1</GoogleMapsDrawLineAutoScale>
+      <GoogleMapsDrawLineSmooth>1</GoogleMapsDrawLineSmooth>
+      <GoogleMapsDrawLineMin>0</GoogleMapsDrawLineMin>
+      <GoogleMapsDrawLineMax>0</GoogleMapsDrawLineMax>
+    </GoogleMapsSettings>
+  </MBLBrain>
+  <FileCoherence>1</FileCoherence>
+</Document>

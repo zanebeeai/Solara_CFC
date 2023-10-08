@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Space Weather Flux Data</title>
-</head>
-<body>
-    <div id="fluxData"></div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
+$(document).ready(function () {
     $.ajax({
         url: '/get_flux_data',
         type: 'GET',
@@ -17,9 +6,10 @@
             if (!data.error) {
                 var tableHtml = '<table>';
                 for (var i = 0; i < data.length; i++) {
-                    console.log(data[i]);
                     tableHtml += '<tr>';
-                    tableHtml += '<td>' + data[i] + '</td>';
+                    for (var j = 0; j < data[i].length; j++) {
+                        tableHtml += '<td>' + data[i][j] + '</td>';
+                    }
                     tableHtml += '</tr>';
                 }
                 tableHtml += '</table>';
@@ -33,8 +23,3 @@
         }
     });
 });
-
-    </script>
-<!--    <script src="dataGet.js"></script> &lt;!&ndash; Include your external JavaScript file here &ndash;&gt;-->
-</body>
-</html>
