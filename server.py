@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request, send_from_directory
 import requests, csv, json
 from bs4 import BeautifulSoup
 from io import StringIO
@@ -48,9 +48,9 @@ def get_flux_data():
     return jsonify({'error': 'Table not found'}), 404
 
 
-def sendData():
+def sendData(queryTerms):
     # get query terms
-    queryTerms = ['cfc12', 'cfc11']
+    # queryTerms = ['cfc12', 'cfc11']
 
     zeroT = {
         'cfc11': [220, "PPT"],
@@ -74,7 +74,7 @@ def sendData():
         bigData.append(data)
 
     # Specify the path to the JSON file where you want to save the data
-    json_file_path = 'output.json'
+    json_file_path = 'templates/output.json'
 
     print(bigData)
 
@@ -127,12 +127,17 @@ def pullData(query):
 
     else:
         print(f"Failed to fetch CSV data. Status code: {response.status_code}")
+#
+# @app.route('/', methods=['GET'])
+# def serve_index():
+#     return send_from_directory('pages', 'index.tsx',  mimetype='text/plain' )
 
-@app.route('/', methods=['GET'])
-def index():
-    # print(get_flux_data())
-    sendData()
-    return render_template('../pages/index.tsx')
+
+@app.route('/data', methods=['GET'])
+def data():
+    query_data = request.args.getlist('queryData')
+    sendData(query_data)
+    return render_template('output.json')
 
 if __name__ == '__main__':
     app.run(debug=True)
