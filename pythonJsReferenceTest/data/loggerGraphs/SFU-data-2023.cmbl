@@ -1,4 +1,4 @@
-﻿<Document>
+<Document>
   <FileCoherence>1</FileCoherence>
   <Version>3.16.2</Version>
   <charset>utf-8</charset>
@@ -20,7 +20,7 @@
   <GraphMatchNumSections>0</GraphMatchNumSections>
   <Stationery>0</Stationery>
   <CreationDateTime>2023-10-07 15:58:05</CreationDateTime>
-  <ModifiedDateTime>2023-10-08 00:24:57</ModifiedDateTime>
+  <ModifiedDateTime>2023-10-08 09:54:34</ModifiedDateTime>
   <PageBounds>0 0 13.3055555556 6.06944444444</PageBounds>
   <ScreenResolution>0 0 1919 1079</ScreenResolution>
   <MathType>0</MathType>
@@ -48,84 +48,11 @@
     <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
     <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
     <PageReplayWindowPosition>0 83 147 492 372</PageReplayWindowPosition>
-    <PageGraphCartesian>
-      <ID>120 </ID>
-      <BroadcastTo>0 </BroadcastTo>
-      <Visible>1</Visible>
-      <Bounds>2.31077 0.01 13.2956 6.05944 </Bounds>
-      <SubordinateToID>0</SubordinateToID>
-      <SubordinateOffset>0 0</SubordinateOffset>
-      <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
-      <AddNewData>0</AddNewData>
-      <Locked>0</Locked>
-      <AutoCreated>1</AutoCreated>
-      <GraphLinkedIDs>0 </GraphLinkedIDs>
-      <YLinkedIDs>0 </YLinkedIDs>
-      <Font>
-        <Size> 12 </Size>
-        <Justification> 0 </Justification>
-        <VerticalJustification> 0 </VerticalJustification>
-        <Styles> 0 0 0 0 0 0 </Styles>
-        <Family> 3 </Family>
-        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
-        <Name>Arial</Name>
-        <Rotation>0</Rotation>
-      </Font>
-      <GraphTitle></GraphTitle>
-      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
-      <GraphShowPoints>0</GraphShowPoints>
-      <GraphInterpolate>0</GraphInterpolate>
-      <GraphShowTangent>0</GraphShowTangent>
-      <GraphShowLegend>0</GraphShowLegend>
-      <GraphShowCursorStatus>1</GraphShowCursorStatus>
-      <GraphShowCursorDelta>1</GraphShowCursorDelta>
-      <GraphPlotBaseColumnID>116 </GraphPlotBaseColumnID>
-      <GraphPlotTraceIDPairs>1 116 118 </GraphPlotTraceIDPairs>
-      <LogXAxis>0</LogXAxis>
-      <LogYAxis>0</LogYAxis>
-      <LogRightYAxis>0</LogRightYAxis>
-      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
-      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
-      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
-      <GraphConnectLines>0</GraphConnectLines>
-      <GraphBarGraph>0</GraphBarGraph>
-      <BinGraphStackColumns>0</BinGraphStackColumns>
-      <GraphShowPointProtectors>1</GraphShowPointProtectors>
-      <GraphMajorTickStyle>1</GraphMajorTickStyle>
-      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
-      <GraphMinorTickStyle>0</GraphMinorTickStyle>
-      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
-      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
-      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
-      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
-      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
-      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
-      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
-      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
-      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
-      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
-      <GraphPlotXMin>0</GraphPlotXMin>
-      <GraphPlotXMax>900</GraphPlotXMax>
-      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
-      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
-      <GraphPlotYMin>120</GraphPlotYMin>
-      <GraphPlotYMax>340</GraphPlotYMax>
-      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
-      <GraphPlotDefaultXMax>100</GraphPlotDefaultXMax>
-      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
-      <GraphPlotDefaultYMax>100</GraphPlotDefaultYMax>
-      <GraphPlotXLabel></GraphPlotXLabel>
-      <GraphPlotYLabel></GraphPlotYLabel>
-      <GraphDrawRainbow>0</GraphDrawRainbow>
-      <AudioTraceIDs>1 118 </AudioTraceIDs>
-      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
-    </PageGraphCartesian>
     <PageTable>
       <ID>121 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <Bounds>0.0075 0.0075 2.29327 6.06194 </Bounds>
+      <Bounds>0.00749999999997 0.00750000000001 2.29326999999 6.06194 </Bounds>
       <SubordinateToID>0</SubordinateToID>
       <SubordinateOffset>0 0</SubordinateOffset>
       <BackgroundTransparent>0</BackgroundTransparent>
@@ -145,11 +72,84 @@
         <Name>Arial</Name>
         <Rotation>0</Rotation>
       </Font>
-      <TableColumn> 116 0.8 </TableColumn>
-      <TableColumn> 118 0.8 </TableColumn>
+      <TableColumn> 116 0.799999999997 </TableColumn>
+      <TableColumn> 118 0.799999999997 </TableColumn>
       <StartIndex> 0 </StartIndex>
       <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
     </PageTable>
+    <PageGraphCartesian>
+      <ID>120 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>2.31076999999 0.01 13.2956 6.05944 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle>Daily Solar Flux Values in 2023</GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x0</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>116 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>1 116 118 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>900</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>120</GraphPlotYMin>
+      <GraphPlotYMax>340</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>900</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>120</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>340</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>1 118 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
   </Page>
   <CurrentPageIndex>0</CurrentPageIndex>
   <DataSet>
@@ -179,7 +179,7 @@
       <ID>116 </ID>
       <BroadcastTo>3 17 120 121 </BroadcastTo>
       <Visible>1</Visible>
-      <DataObjectName>X</DataObjectName>
+      <DataObjectName>Date</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
       <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
@@ -1076,7 +1076,7 @@ Z1 2:2023-10-07
       <ID>118 </ID>
       <BroadcastTo>3 17 120 121 </BroadcastTo>
       <Visible>1</Visible>
-      <DataObjectName>Y</DataObjectName>
+      <DataObjectName>Solar Flux (SFU)</DataObjectName>
       <DataObjectShortName>y</DataObjectShortName>
       <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>

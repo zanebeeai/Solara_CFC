@@ -1,8 +1,9 @@
 from flask import Flask, jsonify, render_template
-import requests, csv, os
+import requests, csv, os, folium
 from bs4 import BeautifulSoup
 from io import StringIO
-from PIL import Image
+# from PIL import Image, ImageDraw
+from folium.plugins import HeatMap
 
 app = Flask(__name__)
 
@@ -28,7 +29,7 @@ tiles = 3
 scale_factor = pix_size * tiles / 180 #180 is the totaled max for long magnitude; /2 for lat
 
 # subtraction puts origin on top left as opposed to centre; then both coords are multiplied by 2 to compensate (actually might be bottom left when i think abt it but we can math that later
-CFC_areaCoords = {key: ((lat-90) * -scale_factor, (lon+180) * scale_factor/2) for key, (lat, lon) in CFC_areaCoords.items()}
+conv_CFC_areaCoords = {key: ((lat-90) * -scale_factor, (lon+180) * scale_factor/2) for key, (lat, lon) in CFC_areaCoords.items()}
 # print(CFC_areaCoords)
 
 @app.route('/get_flux_data', methods=['GET'])
@@ -100,30 +101,24 @@ def cfcRasterImage(no):
 
     #that was all data processing; now its time for image manu
 
-    images = []
-    for i in range(tiles):
-        xrow = []
-        for j in range(tiles):
-            img = Image.new("RGBA", (pix_size, pix_size), (0, 0, 0, 0)) #colour is that last tuple
-            # You can customize the image content here if needed
-            xrow.append(img)
-        images.append(xrow)
+    scaleHeat = 400   #arbitrary scale value for heatmap
+    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # For example, Washington, D.C.
+    heat_data = [(point[0], point[1], size*scaleHeat) for point, size in data.items()]
+    heatmap = folium.plugins.HeatMap(heat_data)
 
-    for point in data:
-        ySeg, xSeg = get_segment(tiles, point[0]/(pix_size*tiles)), get_segment(tiles, point[1]/(pix_size*tiles))
-        accessedImage = images[ySeg][xSeg]
+    # Add the heatmap layer to the map
+    heatmap.add_to(m)
 
-        print(f"y={ySeg}, x={xSeg}")
-        print(point)
-        subPoint = (point[1]-pix_size*xSeg, point[0]-pix_size*ySeg)
-        print(subPoint)
-        # print(accessedImage)
+    # Save the map to an HTML file or display it
+    m.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.html"))
+    # img.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.png"))
 
+    # change this to slicing code
 
-    for i in range(len(images)):
-        for j in range(len(images[i])):
-            fileName = f"Overlay-CFC_{no}-{j}-{i}.png"
-            img.save(os.path.join("overlayImageFiles", fileName))
+    # for i in range(len(images)):
+    #     for j in range(len(images[i])):
+    #         fileName = f"Overlay-CFC_{no}-{j}-{i}.png"
+    #         img.save(os.path.join("overlayImageFiles", fileName))
 
 
 def get_segment(tiles, x):
@@ -138,7 +133,7 @@ def get_segment(tiles, x):
 @app.route('/', methods=['GET'])
 def index():
     # print(get_flux_data())
-    cfcRasterImage(11)
+    cfcRasterImage(12)
     return render_template('index.html')
 
 if __name__ == '__main__':
