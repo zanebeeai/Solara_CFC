@@ -1,9 +1,16 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from "react-leaflet";
+import { Map } from "leaflet";
+import HeatMapLayer from "./HeatmapLayer";
+import { addressPoints } from "./addressPoints";
+import { useState } from "react";
 
 function Leaflet() {
+  const [map, setMap] = useState<Map | null>(null);
+
   return (
     <MapContainer
+      ref={setMap}
       center={[38.89511, -77.03637]}
       zoom={3}
       attributionControl={false}
@@ -15,6 +22,7 @@ function Leaflet() {
       ]}
     >
       <TileLayer url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}" />
+      <HeatMapLayer points={addressPoints} options={{ radius: 25 }} />
     </MapContainer>
   );
 }
