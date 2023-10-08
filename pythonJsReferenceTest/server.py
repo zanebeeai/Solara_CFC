@@ -1,9 +1,7 @@
 from flask import Flask, jsonify, render_template
-import requests, csv, os, folium, json
+import requests, csv, json
 from bs4 import BeautifulSoup
 from io import StringIO
-# from PIL import Image, ImageDraw
-from folium.plugins import HeatMap
 
 app = Flask(__name__)
 
@@ -65,12 +63,13 @@ def sendData():
     bigData = []
 
     for query in queryTerms:
-        data = []
-        data.append(zeroT[query])
+        data = {}
+        data["threshold"], data["type"] = zeroT[query]
+        data["points"] = []
 
         queryData = pullData(query)
         for d in queryData:
-            data.append([x for x in d]+[queryData[d]])
+            data["points"].append([x for x in d]+[queryData[d]])
 
         bigData.append(data)
 
