@@ -23,15 +23,6 @@ CFC_areaCoords = {
     "psa": (-64.6, -64.0),
     "spo": (-90, 0),  # South Pole (90S) can be represented as (90, 0)
 }
-
-pix_size =  256
-tiles = 3
-scale_factor = pix_size * tiles / 180 #180 is the totaled max for long magnitude; /2 for lat
-
-# subtraction puts origin on top left as opposed to centre; then both coords are multiplied by 2 to compensate (actually might be bottom left when i think abt it but we can math that later
-conv_CFC_areaCoords = {key: ((lat-90) * -scale_factor, (lon+180) * scale_factor/2) for key, (lat, lon) in CFC_areaCoords.items()}
-# print(CFC_areaCoords)
-
 @app.route('/get_flux_data', methods=['GET'])
 def get_flux_data():
     print("trying to get flux data")
@@ -58,13 +49,6 @@ def get_flux_data():
 
     return jsonify({'error': 'Table not found'}), 404
 
-# input an array of dictionaries of fucking data lmao
-def mapDatas(dataSets):
-    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # maybe center this later
-    for data in dataSets:
-        #ill do multiple gradients give me a sec me
-        gradient = {.33: 'red', .66: 'brown', 1: 'green'}
-        HeatMap(data=df, gradient=gradient, radius=8, max_zoom=13).add_to(m)
 
 def sendData():
     # get query terms
@@ -153,80 +137,6 @@ def pullData(query):
         print(data)
     else:
         print(f"Failed to fetch CSV data. Status code: {response.status_code}")
-
-
-def cfcRasterImage(no):
-    CFC_link_index = {
-        11: "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc11/combined/HATS_global_F11.txt",
-        12: "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc12/combined/HATS_global_F12.txt",
-        13: "https://gml.noaa.gov/aftp/data/hats/cfcs/cfc113/combined/HATS_global_F113.txt",
-    }
-
-    response = requests.get(CFC_link_index[no])
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        # Convert the response content (CSV data) into a string
-        csv_data = response.text
-
-        # Use StringIO to treat the string as a file-like object
-        csv_file = StringIO(csv_data)
-
-        # Create a CSV reader object
-        csv_reader = csv.reader(csv_file)
-
-        rows = list(csv_reader)
-
-        # header row is index 67
-        print("Header row i think idk")
-        # both length 33
-        header = rows[67][0].split()
-        latestFilledData = 0
-        for i in range(len(rows) - 1, -1, -1):
-            if 'nan' not in rows[i][0].split():
-                latestFilledData = (rows[i][0].split())
-                break  # Stop looking further
-
-        # print(header[8].split('_')[1])
-        # data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in CFC_areaCoords] and len(header[i].split('_')) == 3 else header[i]): latestFilledData[i] for i in range(len(header))}
-        data = {(CFC_areaCoords[header[i].split('_')[1]] if header[i].split('_')[1] in [key for key in CFC_areaCoords] and len(header[i].split('_')) == 3 else ""): float(latestFilledData[i]) for i in range(len(header))}
-        del data[""]
-
-        print(data)
-    else:
-        print(f"Failed to fetch CSV data. Status code: {response.status_code}")
-
-    #that was all data processing; now its time for image manu
-
-    scaleHeat = 400   #arbitrary scale value for heatmap
-
-    m = folium.Map(location=[38.8951100, -77.0363700], zoom_start=4)  # maybe center this later
-    heat_data = [(point[0], point[1], size*scaleHeat) for point, size in data.items()]
-    heatmap = folium.plugins.HeatMap(heat_data)
-
-    # Add the heatmap layer to the map
-    heatmap.add_to(m)
-
-    # Save the map to an HTML file or display it
-    m.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.json"))
-    # img.save(os.path.join("overlayImageFiles", f"big_Overlay-CFC_{no}.png"))
-
-    # change this to slicing code
-
-    # for i in range(len(images)):
-    #     for j in range(len(images[i])):
-    #         fileName = f"Overlay-CFC_{no}-{j}-{i}.png"
-    #         img.save(os.path.join("overlayImageFiles", fileName))
-
-
-def get_segment(tiles, x):
-    if 0 <= x <= 1:
-        segment_size = 1 / tiles
-        segment = int(x / segment_size)
-        return min(segment, tiles - 1)  # Ensure it doesn't go beyond tiles - 1
-    else:
-        raise ValueError("x should be in the range [0, 1]")
-
 
 @app.route('/', methods=['GET'])
 def index():
