@@ -1,4 +1,5 @@
 ### Solara Documentation
+Videos with documentation of the resource:
 https://youtu.be/5_Pm5erbIyA
 https://youtu.be/ZanuoFe8ahc
 https://youtu.be/uJ6uX_870ZE
