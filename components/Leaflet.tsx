@@ -21,7 +21,7 @@ export type LeafletLayerDataTypes =
 
 function Leaflet({ data }: { data: LeafletData[] }) {
   const combinedPoints = ([] as number[][]).concat(
-    ...data.map((item) => item.points)
+    ...addressPoints.map((item) => item.points)
   );
 
   return (

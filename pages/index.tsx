@@ -8,6 +8,8 @@ const Leaflet = dynamic(() => import("../components/Leaflet"), {
 });
 
 const Home = ({ data }: { data: LeafletData[] }) => {
+  console.log(data);
+  
   return <Leaflet data={data} />;
 };
 
