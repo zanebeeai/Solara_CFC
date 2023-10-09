@@ -48,12 +48,12 @@ def get_ozone_data():
 
     return(mapRes)
 def get_flux_data():
-    print("trying to get flux data")
+    # print("trying to get flux data")
     url = 'https://spaceweather.gc.ca/forecast-prevision/solar-solaire/solarflux/sx-5-flux-en.php'
     response = requests.get(url)
 
     if response.status_code == 200:
-        print("accessed")
+        # print("accessed")
         soup = BeautifulSoup(response.text, 'html.parser')
         table = soup.find('table', {'class': 'table table-bordered'})
         # print(soup)
@@ -64,7 +64,7 @@ def get_flux_data():
             # Extract the last row's data as a list
             last_row_data = [cell.text.strip() for cell in last_row.find_all('td')]
 
-            print(last_row_data)
+            # print(last_row_data)
             return (last_row_data)
 
     else:
@@ -108,7 +108,7 @@ def sendData(queryTerms):
     # Specify the path to the JSON file where you want to save the data
     json_file_path = 'templates/output.json'
 
-    print(bigData)
+    # print(bigData)
 
     # Write the bigData array to the JSON file
     with open(json_file_path, 'w') as json_file:

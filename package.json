@@ -12,6 +12,7 @@
     "@vgrid/react-leaflet-heatmap-layer": "^4.0.3",
     "clsx": "^2.0.0",
     "leaflet": "^1.9.4",
+    "leaflet.heat": "^0.2.0",
     "lucide-react": "^0.284.0",
     "next": "13.5.4",
     "react": "^18",
