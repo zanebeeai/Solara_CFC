@@ -22,6 +22,12 @@ Our primary objective was to ensure that every facet of our endeavor, from the i
 
 Understanding that the language and content we use can greatly affect user accessibility, we leveraged GPT-4 to assist in generating user-friendly content. This ensured that the terminologies, instructions, and other textual components of our project were presented in a manner that was clear and concise, regardless of the user's age or ability. Whether it was simplifying complex jargons for younger users or providing voice-based guidance for those with visual impairments, GPT-4 played a crucial role in helping us create a universally friendly user experience. We also used GPT-4 and Github Copilot to work through syntax errors within our code, and ensure that we did not spend too much time debugging.
 
+## Flask database can query multiple layers in a single json
+<img width="1103" alt="Screenshot 2023-10-08 at 11 40 32 PM" src="https://github.com/zanzilla22/Solara_CFC/assets/114894627/e9b89396-ebc9-4510-8746-a0a589fa85d2">
+
+## Flask backend to export parsed data as json; to be used in heatmaps with leaflet
+
+<img width="1104" alt="Screenshot 2023-10-08 at 11 40 52 PM" src="https://github.com/zanzilla22/Solara_CFC/assets/114894627/76303fca-ea8a-4dee-b014-ae2945c9a5d7">
 
 
 ## Getting Started
